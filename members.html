@@ -35,6 +35,25 @@ header li a {
 color: blue;
 text-decoration: none;
 }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
 </style>
 </Head>
 <Body>
@@ -53,15 +72,37 @@ text-decoration: none;
 </ul>
 </nav>
 </header>
+<h1 style="text-align:center">
+    <div style="background: rgb(255, 255, 255);
+            font-size: 30px;
+            padding: 10px;
+            border: 1px solid lightgray;
+            margin: 10px;">
 Meet the members!
-Aaron Lin
-<p><img src="https://cdn.discordapp.com/attachments/823322468365762593/901388421451354112/veryprofessionalphoto.jpeg" width="250" height="250"></p>
-Isaac Gonzalez
-<p><img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/40483453_123345081947145_2201421990491848704_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=h0uif6ohlO0AX_Mq_-7&_nc_hscontent-sjc3-1.xx&oh=d91dfe335f1d6002f0aac8bcb3f83b21&oe=61985B58" width="250" height="250"></p>
-James Yoo
-<p><img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/61554505_2263940710355136_4611643382287040512_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=08i7hwTDVoQAX90Ovnw&_nc_ht=scontent-sjc3-1.xx&oh=9e059df5fe96eeff63699632ff173253&oe=619A5123" width="250" height="250"></p>
-Shayan Islam
-<p><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGScqbyGktIw/profile-displayphoto-shrink_800_800/0/1598488867648?e=1640217600&v=beta&t=TjHDPVSDx5aWq3p7hf8DFLyCyMWcQFESSN-7kzk1CWA" width="250" height="250"></p>
+</h1>
+<div style="background: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid rgb(211, 211, 211);
+            margin: 10px;">
+<div class="row">
+    <div class="column">
+        <img src="https://cdn.discordapp.com/attachments/823322468365762593/901388421451354112/veryprofessionalphoto.jpeg" alt="Aaron" width="250" height="250">
+        <a href="https://www.linkedin.com/in/aaron-lin-03488021b/">Aaron Lin</a>
+    </div>
+    <div class="column">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/40483453_123345081947145_2201421990491848704_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=h0uif6ohlO0AX_Mq_-7&_nc_oc=AQkWZiv-bFm_c-afjjw5i6cL4IWPAhtq5IZLEqyjZup1ILYEF77P-qIZZXCpzdXlxCE&_nc_ht=scontent-sjc3-1.xx&oh=16c6dfe086c14b0ae89671537b0df715&oe=61985B58" alt="Isaac" width="250" height="250">
+        <a href="https://www.linkedin.com/in/isaac-gonzalez-652732195/">Isaac Gonzalez</a>
+    </div>
+    <div class="column">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/61554505_2263940710355136_4611643382287040512_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=08i7hwTDVoQAX90Ovnw&_nc_ht=scontent-sjc3-1.xx&oh=9e059df5fe96eeff63699632ff173253&oe=619A5123" alt="James" width="250" height="250">
+        <a href="https://www.linkedin.com/in/jamesmyoo/">James Yoo</a>
+    </div>
+    <div class="column">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGScqbyGktIw/profile-displayphoto-shrink_800_800/0/1598488867648?e=1640217600&v=beta&t=TjHDPVSDx5aWq3p7hf8DFLyCyMWcQFESSN-7kzk1CWA" alt="Shayan" width="250" height="250">
+        <a href="https://www.linkedin.com/in/shayan-islam-3077b916a/">Shayan Islam</a>
+    </div>
+</div>
 
 </Body>
 </Html>
